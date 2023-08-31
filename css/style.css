@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #8458f0;
+}
+
+.header__logo {
+    width: 300px;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 70px;
+    align-items: center;
+}
+
+.nav ul li {
+    padding: 20px;
+    display: flex;
+    margin: 20px;
+
+}
+
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3,
+p {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+
+.presentacion {
+    padding: 73px;
+    background-image: 
+    url(../assets/img/holaa2.jpg) ;
+}
+
+p.subtexto {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+
+  button,
+  .form .boton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #eaeaea;
+    background-color: #008db1;
+    size: 30px;
+    padding: 8px;
+    border-radius: 50px;
+    margin: 5px 5px 10px 5px;
+  }
+
+  #main_index h1,
+  #main_index h2 {
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  .verde {
+    background-color: #619b8a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .card {
+    font-family: 'Montserrat', sans-serif;
+      }
