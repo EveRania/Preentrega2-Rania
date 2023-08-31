@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-   
+
 }
 
 .header {
@@ -37,6 +37,8 @@
     padding: 20px;
     display: flex;
     margin: 20px;
+    list-style: none;
+    text-decoration: none;
 
 }
 
@@ -70,8 +72,9 @@ p {
 
 .presentacion {
     padding: 73px;
-    background-image: 
-    url(../assets/img/holaa2.jpg) ;
+    background-image:
+        url(../assets/img/holaa2.jpg);
+        background-repeat: no-repeat;
 }
 
 p.subtexto {
@@ -82,10 +85,10 @@ p.subtexto {
     padding-bottom: 10px;
     padding-left: 5px;
     font-weight: bold;
-  }
+}
 
-  button,
-  .form .boton {
+button,
+.form .boton {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #eaeaea;
@@ -94,24 +97,67 @@ p.subtexto {
     padding: 8px;
     border-radius: 50px;
     margin: 5px 5px 10px 5px;
-  }
+}
 
-  #main_index h1,
-  #main_index h2 {
+#main_index h1,
+#main_index h2 {
     text-align: left;
     padding-left: 5px;
-  }
+}
 
-  .verde {
+.verde {
     background-color: #619b8a;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-  .card {
+.card {
     font-family: 'Montserrat', sans-serif;
-      }
+}
+
+.container{
+    padding: 20px 0 30px;
+}
+
+/* Footer */
+.footer {
+    background-color: #8458f0;
+    color: #eaeaea;
+    padding-top: 30px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: auto; */
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer .categorias h4,
+li,
+a {
+    color: #eaeaea;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo_footer {
+    width: 200px;
+    padding-bottom: 15px;
+}
+
+li {
+    list-style: none;
+
+}
+
+.nav_footer ul,
+.info ul {
+    padding-left: 0;
+}
+
+.obras_sociales img{
+    width: 250px;
+}
