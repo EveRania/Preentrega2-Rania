@@ -58,7 +58,7 @@ h1 {
 
 h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -130,7 +130,6 @@ button,
     padding-top: 30px;
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    /* margin: auto; */
     justify-content: space-evenly;
     text-align: center;
 }
@@ -162,6 +161,7 @@ li {
     width: 250px;
 }
 
+/* Sobre mi */
 #main_sobremi h1 {
     text-align: right;
     padding-right: 30px;
@@ -189,4 +189,109 @@ li {
     position: absolute;
     right: 100px;
     top: 500px;
+  }
+
+  /* Servicios */
+  .main-servicios {  display: grid;
+    padding: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "kinesiologia kinesiologia kinesiologia img_kinesio"
+      "img_pilates pilates pilates pilates"
+      "fisio fisio fisio img_fisio"
+      "img_drenaje drenaje_linfatico drenaje_linfatico drenaje_linfatico";
+  }
+  .main-servicios img {  
+    width: 500px;}
+    .main-servicios a {
+       display: flex;
+       justify-content: space-around;
+
+    }
+  .kinesiologia {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0,25fr 1,25fr 1,25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo_kine titulo_kine titulo_kine"
+      "p_kine p_kine p_kine"
+      "p_kine p_kine p_kine";
+    grid-area: kinesiologia;
+  }
+  
+  .titulo_kine { grid-area: titulo_kine; 
+}
+  
+  .p_kine { grid-area: p_kine; }
+  
+  .img_kinesio { grid-area: img_kinesio; 
+width: 50px;}
+
+
+  
+  .img_pilates { grid-area: img_pilates; }
+  
+  .pilates {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo_pilates titulo_pilates titulo_pilates"
+      "p_pilates p_pilates p_pilates"
+      "p_pilates p_pilates p_pilates";
+    grid-area: pilates;
+  }
+  
+  .titulo_pilates { grid-area: titulo_pilates; }
+  
+  .p_pilates { grid-area: p_pilates; }
+  
+  .img_fisio { grid-area: img_fisio; }
+  
+  .fisio {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo_fisio titulo_fisio titulo_fisio"
+      "p_fisio p_fisio p_fisio"
+      "p_fisio p_fisio p_fisio";
+    grid-area: fisio;
+  }
+  
+  .titulo_fisio { grid-area: titulo_fisio; }
+  
+  .p_fisio { grid-area: p_fisio; }
+  
+  .img_drenaje { grid-area: img_drenaje; }
+  
+  .drenaje_linfatico {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo_dren titulo_dren titulo_dren"
+      "p_dren p_dren p_dren"
+      "p_dren p_dren p_dren";
+    grid-area: drenaje_linfatico;
+  }
+  
+  .titulo_dren { grid-area: titulo_dren; }
+  
+  .p_dren { grid-area: p_dren; }
+  
+  .izq {
+    text-align: left;
+  }
+
+  .der {
+    text-align: right;
   }
