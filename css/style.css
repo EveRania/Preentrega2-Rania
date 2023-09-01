@@ -295,7 +295,18 @@ button,
     padding: 20px 0px 20px 170px;
 }
 
+.turnos {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 30px 0;
+}
 
+ .form .boton {
+    display: flex;
+    margin: auto;
+
+ }
 
 /* Footer */
 .footer {

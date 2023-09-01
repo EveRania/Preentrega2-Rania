@@ -7,8 +7,8 @@
     <title>Agustin Raña Kinesiologia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -37,9 +37,45 @@
         </nav>
     </header>
 
+    <main>
+        <h1>TURNOS</h1>
+        <h2 class="verde">¿Queres un turno o mas informacion? Contactate</h2>
 
-     <!-- Footer -->
-     <footer class="footer">
+        <section class="turnos">
+           
+            <!-- Info de contacto -->
+            <section class="dias">
+                <p class="flex">Dias y horarios de atencion: de Lunes a Viernes de 8 a 18 hs.</p>
+                <p> Telefono: 341 4280060 </p>
+                <p> Whatsapp: 341 030 3456 </p>
+                <p>Direccion: Av Siempreviva 742, Rosario (Arg)</p>
+                <p>Mail: arkinesiologia@gmail.com </p>
+            </section>
+             <!-- form para turnos -->
+
+             <section class="form">
+                <form action="" method="get">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido"><br><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono"><br><br>
+                    <label for="servicio">Servicio que le interesa</label>
+                    <input type="text" name="servidio" id="servicio">
+                    <label for="paciente">Soy paciente</label>
+                    <input type="checkbox" name="es paciente" id="paciente" value="es paciente"> <br><br>
+
+                    <input class="boton" type="submit" value="Pedir un turno">
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <!-- Columna categorias -->
         <section class="categorias">
             <h4>CATEGORIAS</h4>
