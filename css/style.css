@@ -27,16 +27,16 @@
 
 .nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    min-height: 70px;
+    min-height: 50px;
     align-items: center;
 }
 
 .nav ul li {
-    padding: 20px;
+    padding: 5px;
     display: flex;
-    margin: 20px;
+    /* margin: auto; */
     list-style: none;
     text-decoration: none;
 
@@ -47,7 +47,15 @@
     color: white;
     text-decoration: none;
     display: flex;
-    margin: 20px;
+    margin: 0 20px;
+}
+
+/* Pseudoclases: hover */
+
+li:hover {
+    background-color: rgb(140, 98, 248);
+    border-radius: 15%;
+
 }
 
 h1 {
@@ -302,11 +310,11 @@ button,
     padding: 20px 0 30px 0;
 }
 
- .form .boton {
+.form .boton {
     display: flex;
     margin: auto;
 
- }
+}
 
 /* Footer */
 .footer {
@@ -344,4 +352,31 @@ li {
 
 .obras_sociales img {
     width: 250px;
+}
+
+/* Mobile Last */
+
+@media(max-width: 1000px) {
+    .header {
+        display: block;
+    }
+
+    .header__logo {
+        width: 30vw;
+        margin: 0 30vw;
+    }
+
+    .nav ul {
+        width: 100vw;
+    }
+
+    .turnos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "dias"
+            "form";
+    }
 }
